@@ -13,7 +13,10 @@ Any would be migrants to major European cities would be interested in finding ar
 
 ### 2. Data Acquisition
 #### 2.1 Data Sources and Cleaning
-The cities used to compare in this project were London, Paris, and Berlin. Paris and Berlin were chosen as they are the financial centers of the two most wealthy nations in the EU. They are also the largest cities in their respective nations and the most populous, making them the most comparable 
-    A dataset including the latitude and longitude of the neighbourhoods of each city were created through various means. Paris was the simplest as it has twenty neighbhourhoods each with a corresponding post code. These postcodes were obtained and through this their latitude and longitude were obtained. 
-    Both London and Berlin have more complicated postcode systems with neighbourhoods sharing postcodes or having multiple postcodes. A list of neighbourhoods were obtained from [here](https://en.wikipedia.org/wiki/List_of_areas_of_London) and [here](https://en.wikipedia.org/wiki/List_of_cities_in_Germany_by_population). Only the London neighbourhoods with the London post town were used. The latitude and longitude of each of these locations was then generated.
-    Using the Foursquare API, a list of venues within a five-hundred metre radius of the latitude and longitude of each neighbhourhood was scraped. These datasets were then converted into a format usable for KNN clustering through one-hot encoding.
+The cities used to compare in this project were London, Paris, and Berlin. Paris and Berlin were chosen as they are the financial centers of the two most wealthy nations in the EU. They are also the largest cities in their respective nations and the most populous, making them the most comparable.
+
+A dataset including the latitude and longitude of the neighbourhoods of each city were created through various means. Paris was the simplest as it has twenty neighbhourhoods each with a corresponding post code. These postcodes were obtained and through this their latitude and longitude were obtained.
+
+Both London and Berlin have more complicated postcode systems with neighbourhoods sharing postcodes or having multiple postcodes. A list of neighbourhoods were obtained from [here](https://en.wikipedia.org/wiki/List_of_areas_of_London) and [here](https://en.wikipedia.org/wiki/List_of_cities_in_Germany_by_population). Only the London neighbourhoods with the London post town were used. The latitude and longitude of each of these locations was then generated.
+
+Using the Foursquare API, a list of venues within a five-hundred metre radius of the latitude and longitude of each neighbhourhood was scraped. These datasets were then converted into a format usable for KNN clustering through one-hot encoding.
